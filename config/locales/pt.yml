@@ -1,0 +1,16 @@
+pt:
+  project:
+    title:    "D.I.S.C. Browser"
+  controller:
+    Home:     "Inicial"
+  messages:
+    success:
+      create: "O %{value} foi criado com sucesso"
+      update: "O %{value} foi atualizado com sucesso"
+      remove: "O %{value} foi removido com sucesso"
+    error:
+      create: "O %{value} não foi criado com sucesso"
+      update: "O %{value} não foi atualizado com sucesso"
+      remove: "O %{value} não foi removido com sucesso"
+    alert:
+      remove: "Tem certeza que quer deletar o %{value} ?"
