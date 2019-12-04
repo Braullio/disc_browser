@@ -48,7 +48,7 @@ end
 
 group :test do
   gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  gem 'webdrivers', '~> 3.0'
   gem 'database_cleaner'
 end
 
