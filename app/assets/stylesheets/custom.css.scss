@@ -1,0 +1,21 @@
+@import "bootstrap";
+
+.font-logo {
+  font-family: "Font Awesome 5 Free";
+}
+.background_color-green-dark {
+  background-color: #00451d;
+}
+.border-black {
+  border: .08em solid black
+}
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
+.form-signin {
+   width: 100%;
+   max-width: 330px;
+   padding: 15px;
+   margin: auto;
+}
