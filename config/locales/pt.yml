@@ -14,3 +14,60 @@ pt:
       remove: "O %{value} não foi removido com sucesso"
     alert:
       remove: "Tem certeza que quer deletar o %{value} ?"
+  disc_html:
+    D: "<div class=\"card text-white bg-danger mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+      <div class=\"card-header\">
+        ( I ) Perfil Dominância
+      </div>
+      <div class=\"card-body\">
+        <h5 class=\"card-title\">Motivado por Desafios e Eficácia<br>
+    Busca Resultado</h5>
+        <p class=\"card-text\">Caracteristicas:</p>
+        <ul><li>Assertivo</li>
+        <li>Competitivo</li>
+        <li>Esforçado</li>
+        <li>Objetivo</li></ul>
+      </div>
+    </div>"
+    I: "<div class=\"card text-white bg-warning mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+      <div class=\"card-header\">
+        ( I ) Perfil de Influência
+      </div>
+      <div class=\"card-body\">
+        <h5 class=\"card-title\">Motivado por Liberdade e Autonomia<br>
+    Busca Relacionamento</h5>
+        <p class=\"card-text\">Caracteristicas:</p>
+        <ul><li>Simpático</li>
+        <li>Confiante</li>
+        <li>Otimista</li>
+        <li>Participativo</li></ul>
+      </div>
+    </div>"
+    S: "<div class=\"card text-white bg-success mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+      <div class=\"card-header\">
+        ( S ) Perfil de Estabilidade
+      </div>
+      <div class=\"card-body\">
+        <h5 class=\"card-title\">Motivado por Segurança e Lealdade<br>
+    Busca Colaboração</h5>
+        <p class=\"card-text\">Caracteristicas:</p>
+        <ul><li>Confiável</li>
+        <li>Persistente</li>
+        <li>Amável</li>
+        <li>Gentil</li></ul>
+      </div>
+    </div>"
+    C: "<div class=\"card text-white bg-info mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+      <div class=\"card-header\">
+        ( C ) Perfil de Conformidade
+      </div>
+      <div class=\"card-body\">
+        <h5 class=\"card-title\">Motivado por Alto Padrão de Qualidade<br>
+    Busca qualidade</h5>
+        <p class=\"card-text\">Caracteristicas:</p>
+        <ul><li>Cuidadoso</li>
+        <li>Sistematico</li>
+        <li>Preciso</li>
+        <li>Perfeccionista</li></ul>
+      </div>
+    </div>"
