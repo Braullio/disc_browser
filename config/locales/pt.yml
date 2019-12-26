@@ -15,9 +15,9 @@ pt:
     alert:
       remove: "Tem certeza que quer deletar o %{value} ?"
   disc_html:
-    D: "<div class=\"card text-white bg-danger mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+    D: "<div class=\"card text-black bg-danger mb-3\" style=\"min-width: 400px; max-width: 400px;\">
       <div class=\"card-header\">
-        ( I ) Perfil Dominância
+        ( D ) Perfil Dominância
       </div>
       <div class=\"card-body\">
         <h5 class=\"card-title\">Motivado por Desafios e Eficácia<br>
@@ -29,7 +29,7 @@ pt:
         <li>Objetivo</li></ul>
       </div>
     </div>"
-    I: "<div class=\"card text-white bg-warning mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+    I: "<div class=\"card text-black bg-warning mb-3\" style=\"min-width: 400px; max-width: 400px;\">
       <div class=\"card-header\">
         ( I ) Perfil de Influência
       </div>
@@ -43,7 +43,7 @@ pt:
         <li>Participativo</li></ul>
       </div>
     </div>"
-    S: "<div class=\"card text-white bg-success mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+    S: "<div class=\"card text-black bg-success mb-3\" style=\"min-width: 400px; max-width: 400px;\">
       <div class=\"card-header\">
         ( S ) Perfil de Estabilidade
       </div>
@@ -57,13 +57,13 @@ pt:
         <li>Gentil</li></ul>
       </div>
     </div>"
-    C: "<div class=\"card text-white bg-info mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+    C: "<div class=\"card text-black bg-info mb-3\" style=\"min-width: 400px; max-width: 400px;\">
       <div class=\"card-header\">
         ( C ) Perfil de Conformidade
       </div>
       <div class=\"card-body\">
         <h5 class=\"card-title\">Motivado por Alto Padrão de Qualidade<br>
-    Busca qualidade</h5>
+    Busca Qualidade</h5>
         <p class=\"card-text\">Caracteristicas:</p>
         <ul><li>Cuidadoso</li>
         <li>Sistematico</li>
