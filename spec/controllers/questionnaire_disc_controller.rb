@@ -34,7 +34,7 @@ RSpec.describe QuestionnaireDiscController, type: :controller do
 
       it 'redirects to the save questionnaire DISC' do
         post :create, params: quest
-        expect(response).to redirect_to(root_path)
+        expect(response).to redirect_to(questionnaire_disc_index_path)
       end
     end
   end
