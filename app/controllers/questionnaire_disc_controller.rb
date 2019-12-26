@@ -9,10 +9,10 @@ class QuestionnaireDiscController < ApplicationController
   def create
     @questionnaire = QuestionnaireDisc.new(@questionnaire_params)
     if @questionnaire.save
-      flash[:success] = (t 'messages.success.create', :value => (t 'controller.board'))
-      redirect_to root_path
+      flash[:success] = (t 'messages.success.create', value: (t 'controller.board'))
+      redirect_to questionnaire_disc_index_path
     else
-      flash[:danger] = (t 'messages.error.create', :value => (t 'controller.board'))
+      flash[:danger] = (t 'messages.error.create', value: (t 'controller.board'))
       redirect_to root_path
     end
   end
@@ -40,11 +40,11 @@ class QuestionnaireDiscController < ApplicationController
   end
 
   def sum_question(number)
-    convert_array(@report.question01)[number] + convert_array(@report.question02)[number]+
-    convert_array(@report.question03)[number] + convert_array(@report.question04)[number]+
-    convert_array(@report.question05)[number] + convert_array(@report.question06)[number]+
-    convert_array(@report.question07)[number] + convert_array(@report.question08)[number]+
-    convert_array(@report.question09)[number] + convert_array(@report.question10)[number]
+    [convert_array(@report.question01)[number], convert_array(@report.question02)[number],
+    convert_array(@report.question03)[number], convert_array(@report.question04)[number],
+    convert_array(@report.question05)[number], convert_array(@report.question06)[number],
+    convert_array(@report.question07)[number], convert_array(@report.question08)[number],
+    convert_array(@report.question09)[number], convert_array(@report.question10)[number]].sum
   end
 
   def convert_array(variable)
