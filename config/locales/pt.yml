@@ -3,6 +3,16 @@ pt:
     title:    "D.I.S.C. Browser"
   controller:
     Home:     "Inicial"
+  generic:
+    four_profiles:  "Os 4 Perfis"
+    back:           "Voltar"
+    history:        "Historico"
+    test_start:     "Fazer o Teste"
+    what_disc:      "O que e o DISC?"
+    home_page:      "Pagina Inicial"
+    profile:        "perfil"
+    profiles:       "perfis"
+    is_teste:       "Esse teste DISC apresenta"
   messages:
     success:
       create: "O %{value} foi criado com sucesso"
