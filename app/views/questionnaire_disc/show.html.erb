@@ -1,7 +1,7 @@
 <br>
 <center>
-    <% text = ((@profile.size > 1) ? 'perfis' : 'perfil') %>
-    <%= "Esse teste DISC apresenta #{@profile.size} #{text}: " %>
+    <% text = ((@profile.size > 1) ? t("generic.profiles") : t("generic.profile")) %>
+    <%= "#{t("generic.is_teste")} #{@profile.size} #{text}: " %>
     <% @profile.each.with_index do |p,index|%>
     <%= @profile.size.equal?("#{index}".to_i+1) ? "#{p}" : "#{p} e " %>
     <% end %>
@@ -16,5 +16,5 @@
 </div>
 
 <center>
-    <%=link_to 'Pagina Inicial', root_path , class: "btn text-white bg-dark"%>
+    <%=link_to t("generic.home_page"), root_path , class: "btn text-white bg-dark"%>
 </center>
