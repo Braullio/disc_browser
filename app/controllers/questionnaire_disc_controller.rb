@@ -12,10 +12,12 @@ class QuestionnaireDiscController < ApplicationController
   def create
     @questionnaire = QuestionnaireDisc.new(@questionnaire_params)
     if @questionnaire.save
-      flash[:success] = t 'messages.success.create', value: (t 'controller.board')
+      flash[:success] = (t 'messages.success.create',
+                           value: (t 'controller.board'))
       redirect_to questionnaire_disc_index_path
     else
-      flash[:danger] = t 'messages.error.create', value: (t 'controller.board')
+      flash[:danger] = (t 'messages.error.create',
+                          value: (t 'controller.board'))
       redirect_to root_path
     end
   end
@@ -24,9 +26,9 @@ class QuestionnaireDiscController < ApplicationController
 
   def questionnaire_params
     @questionnaire_params = params.permit(
-      :title, :question01, :question02, :question03,
-      :question04, :question05, :question06, :question07,
-      :question08, :question09, :question10
+      :title,
+      :question01, :question02, :question03, :question04, :question05,
+      :question06, :question07, :question08, :question09, :question10
     )
   end
 
