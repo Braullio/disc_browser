@@ -2,7 +2,8 @@ pt:
   project:
     title:    "D.I.S.C. Browser"
   controller:
-    Home:     "Inicial"
+    Home:          "Inicial"
+    questionnaire: "Questionario"
   generic:
     four_profiles:  "Os 4 Perfis"
     back:           "Voltar"
@@ -13,9 +14,16 @@ pt:
     profile:        "perfil"
     profiles:       "perfis"
     is_teste:       "Esse teste DISC apresenta"
+    created_at:     "Data de criação"
+    title:          "Titulo"
+    action:         "Ação"
+    show_profile:   "Mostrar o perfil"
+    cancel:         "Cancelar"
+    send:           "Enviar"
+    next:           "Proximo"
   messages:
     success:
-      create: "O %{value} foi criado com sucesso"
+      create: "O %{value} foi gerado com sucesso"
       update: "O %{value} foi atualizado com sucesso"
       remove: "O %{value} foi removido com sucesso"
     error:
