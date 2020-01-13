@@ -1,0 +1,28 @@
+<div class="container mt-3 pt-3 pb-3 bg-white border border-primary">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"><%= t("generic.created_at") %></th>
+      <th scope="col"><%= t("generic.title") %></th>
+      <th scope="col"><%= (t("generic.profile")).capitalize %></th>
+      <th scope="col"><%= t("generic.action") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @all_questionnaire.each do |form| %>
+        <tr>
+        <th><%= form.id %></th>
+        <th><%= form.created_at.strftime("%Y-%m-%d %H:%M") %></th>
+        <td><%= form.title %></td>
+        <td><%= form.profile.tr('[] "', '') %></td>
+        <td>
+            <%= link_to questionnaire_disc_path(form.id), title: "" , class: "btn btn-success btn-sm" do %><i class="fa fa-eye"></i> <% end %>
+        </td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to t("generic.back"), root_path, class: "btn btn-primary" %><br>
+</div>
