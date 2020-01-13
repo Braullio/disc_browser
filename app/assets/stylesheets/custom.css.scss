@@ -79,3 +79,52 @@ body {
 .box:nth-child(4):hover {
   background: #018543;
 }
+.btn-bg {
+  padding: 0.5rem 1rem;
+  font-size: 1.70rem;
+  margin-top: -100px;
+}
+input.form-control {
+  max-width: 50%;
+}
+.btn-secondary.active {
+  background-color: steelblue !important;
+  border-color: #4e555b;
+}
+
+input.form-control {
+  max-width: 100% !important
+}
+
+.box-check {
+  background-color: #4e555b;
+  text-align: center;
+  text-justify: center;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: white;
+  padding: 5%;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.box-question {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  padding: 0.75rem;
+  border-top: 1px solid #dee2e6;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+hr {
+  margin-top: 0rem !important; 
+  margin-bottom: 0rem !important;
+}
+.radio-error{
+  background-color: red !important;
+  border-color: red !important;
+}
