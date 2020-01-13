@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Index project
 class HomeController < ApplicationController
   def index; end
 
