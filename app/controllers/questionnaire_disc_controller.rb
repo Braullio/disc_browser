@@ -11,14 +11,15 @@ class QuestionnaireDiscController < ApplicationController
   def show; end
 
   def create
-    if @questionnaire.save
+    if @error == 'difer'
+      @questionnaire.save
       flash[:success] = (t 'messages.success.create',
-                           value: (t 'controller.questionnaire'))
+                          value: (t 'controller.questionnaire'))
       redirect_to questionnaire_disc_path(@questionnaire)
     else
       flash[:danger] = (t 'messages.error.create',
                           value: (t 'controller.questionnaire'))
-      redirect_to root_path
+      render :index
     end
   end
 
@@ -30,7 +31,6 @@ class QuestionnaireDiscController < ApplicationController
     @questionnaire = QuestionnaireDisc.new
     @questionnaire.title = params[:title]
     bind_attribute(params)
-    byebug
     check_attribute
   end
 
@@ -45,7 +45,10 @@ class QuestionnaireDiscController < ApplicationController
   def check_attribute
     (1..10).each do |number_question|
       number_question.to_i < 10 ? number_question = "0#{number_question}" : nil
-      @questionnaire["question#{number_question}"].to_array.sort == ['1','2','3','4'] ? return false : nil
+      @error =
+        unless @questionnaire["question#{number_question}"].to_array.sort == %w[1 2 3 4]
+          'difer'
+        end
     end
   end
 
