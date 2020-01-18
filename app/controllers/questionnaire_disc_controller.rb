@@ -30,6 +30,8 @@ class QuestionnaireDiscController < ApplicationController
     @questionnaire = QuestionnaireDisc.new
     @questionnaire.title = params[:title]
     bind_attribute(params)
+    byebug
+    check_attribute
   end
 
   def bind_attribute(params)
@@ -40,12 +42,19 @@ class QuestionnaireDiscController < ApplicationController
     end
   end
 
+  def check_attribute
+    (1..10).each do |number_question|
+      number_question.to_i < 10 ? number_question = "0#{number_question}" : nil
+      @questionnaire["question#{number_question}"].to_array.sort == ['1','2','3','4'] ? return false : nil
+    end
+  end
+
   def all_questionnaire
     @all_questionnaire = QuestionnaireDisc.all
   end
 
   def report_values
     @report = QuestionnaireDisc.find(params[:id])
-    @profile = @report.profile.tr('[] "', '').split(',').map(&:to_s)
+    @profile = @report.profile.to_array
   end
 end
