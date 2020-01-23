@@ -1,0 +1,21 @@
+<br>
+<center>
+    <% text = ((@profile.size > 1) ? t("generic.profiles") : t("generic.profile")) %>
+    <%= "#{t("generic.is_teste")} #{@profile.size} #{text}: " %>
+    <% @profile.each.with_index do |p,index| %>
+    <%= @profile.size.equal?("#{index}".to_i+1) ? "#{p}" : "#{p} e " %>
+    <% end %>
+</center>
+
+<br>
+
+<div class='row justify-content-around'>
+    <% @profile.each do |profile|%>
+    <%= raw t("disc_html.#{profile}") %>
+    <% end %>
+</div>
+
+<center>
+    <%=link_to t("generic.history"), questionnaire_disc_history_path , class: "btn text-dark bg-warning" %>
+    <%=link_to t("generic.home_page"), root_path , class: "btn text-white bg-dark" %>
+</center>

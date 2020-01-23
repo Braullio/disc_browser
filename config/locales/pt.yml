@@ -2,10 +2,28 @@ pt:
   project:
     title:    "D.I.S.C. Browser"
   controller:
-    Home:     "Inicial"
+    Home:          "Inicial"
+    questionnaire: "Questionario"
+  generic:
+    four_profiles:  "Os 4 Perfis"
+    back:           "Voltar"
+    history:        "Historico"
+    test_start:     "Fazer o Teste"
+    what_disc:      "O que e o DISC?"
+    home_page:      "Pagina Inicial"
+    profile:        "perfil"
+    profiles:       "perfis"
+    is_teste:       "Esse teste DISC apresenta"
+    created_at:     "Data de criação"
+    title:          "Titulo"
+    action:         "Ação"
+    show_profile:   "Mostrar o perfil"
+    cancel:         "Cancelar"
+    send:           "Enviar"
+    next:           "Proximo"
   messages:
     success:
-      create: "O %{value} foi criado com sucesso"
+      create: "O %{value} foi gerado com sucesso"
       update: "O %{value} foi atualizado com sucesso"
       remove: "O %{value} foi removido com sucesso"
     error:
@@ -14,3 +32,60 @@ pt:
       remove: "O %{value} não foi removido com sucesso"
     alert:
       remove: "Tem certeza que quer deletar o %{value} ?"
+  disc_html:
+    D: "<div class=\"card text-black bg-danger mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+      <div class=\"card-header\">
+        ( D ) Perfil Dominância
+      </div>
+      <div class=\"card-body\">
+        <h5 class=\"card-title\">Motivado por Desafios e Eficácia<br>
+    Busca Resultado</h5>
+        <p class=\"card-text\">Caracteristicas:</p>
+        <ul><li>Assertivo</li>
+        <li>Competitivo</li>
+        <li>Esforçado</li>
+        <li>Objetivo</li></ul>
+      </div>
+    </div>"
+    I: "<div class=\"card text-black bg-warning mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+      <div class=\"card-header\">
+        ( I ) Perfil de Influência
+      </div>
+      <div class=\"card-body\">
+        <h5 class=\"card-title\">Motivado por Liberdade e Autonomia<br>
+    Busca Relacionamento</h5>
+        <p class=\"card-text\">Caracteristicas:</p>
+        <ul><li>Simpático</li>
+        <li>Confiante</li>
+        <li>Otimista</li>
+        <li>Participativo</li></ul>
+      </div>
+    </div>"
+    S: "<div class=\"card text-black bg-success mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+      <div class=\"card-header\">
+        ( S ) Perfil de Estabilidade
+      </div>
+      <div class=\"card-body\">
+        <h5 class=\"card-title\">Motivado por Segurança e Lealdade<br>
+    Busca Colaboração</h5>
+        <p class=\"card-text\">Caracteristicas:</p>
+        <ul><li>Confiável</li>
+        <li>Persistente</li>
+        <li>Amável</li>
+        <li>Gentil</li></ul>
+      </div>
+    </div>"
+    C: "<div class=\"card text-black bg-info mb-3\" style=\"min-width: 400px; max-width: 400px;\">
+      <div class=\"card-header\">
+        ( C ) Perfil de Conformidade
+      </div>
+      <div class=\"card-body\">
+        <h5 class=\"card-title\">Motivado por Alto Padrão de Qualidade<br>
+    Busca Qualidade</h5>
+        <p class=\"card-text\">Caracteristicas:</p>
+        <ul><li>Cuidadoso</li>
+        <li>Sistematico</li>
+        <li>Preciso</li>
+        <li>Perfeccionista</li></ul>
+      </div>
+    </div>"
